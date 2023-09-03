@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="main">
+      <!-- Sign-up form start -->
+      <div class="signUpForm">
+        <div class="grid_left">
+            <div class="column1">
+              <h1>Stay updated!</h1>
+              <P>Join 60,000+ product managers receiving monthly updates on:</P>
+              <ul>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt="" class="icon_list">
+                  <p>Product discovery and building what matters</p>
+                </li>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt="" class="icon_list">
+                  <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li>
+                  <img src="assets/images/icon-list.svg" alt="" class="icon_list">
+                  <p>And much more!</p>
+                </li>
+              </ul>
+              <div class="form">
+                <div class="labels">
+                  <p class="email_label">Email address</p>
+                  <span class="error">Valid email required</span>
+                </div>
+                <input type="text" class="email" placeholder="email@company.com" required autocomplete="off">
+                <button class="subscribe" type="submit">Subscribe to monthly newsletter</button>
+              </div>
+            </div>
+        </div>
+        <div class="grid_right">
+          <img src="assets/images/illustration-sign-up-desktop.svg" alt="" class="desktop_view">
+          <img src="assets/images/illustration-sign-up-mobile.svg" class="mobile_view" alt="">
+        </div>
+      </div>
+    
+      <div class="successContainer hide">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span class="email_success">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+        </p>
+        <button class="dismiss">Dismiss message</button>
+      </div>
+  </div>
+  <script src="./assets/script/script.js"></script>
+</body>
+</html>
